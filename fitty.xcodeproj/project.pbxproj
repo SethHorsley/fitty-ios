@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		275E7B352CB1D9E8000F6E70 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E7B342CB1D9E8000F6E70 /* Item.swift */; };
+		275E7B5F2CB1DB01000F6E70 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275E7B5D2CB1DB01000F6E70 /* HealthKit.framework */; };
+		275E7B602CB1DB01000F6E70 /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275E7B5E2CB1DB01000F6E70 /* HealthKitUI.framework */; };
+		275E7B822CB1E29C000F6E70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E7B802CB1E29C000F6E70 /* ContentView.swift */; };
+		275E7B832CB1E29C000F6E70 /* LeaderboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E7B7E2CB1E29C000F6E70 /* LeaderboardViewModel.swift */; };
+		275E7B8B2CB1F466000F6E70 /* StepDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E7B8A2CB1F464000F6E70 /* StepDataModel.swift */; };
+		275E7B8D2CB1F47F000F6E70 /* StepDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E7B8C2CB1F47D000F6E70 /* StepDataView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		275E7B402CB1D9EA000F6E70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,8 +35,15 @@
 
 /* Begin PBXFileReference section */
 		275E7B2D2CB1D9E8000F6E70 /* fitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		275E7B342CB1D9E8000F6E70 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		275E7B3F2CB1D9EA000F6E70 /* fittyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fittyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		275E7B492CB1D9EA000F6E70 /* fittyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fittyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		275E7B5D2CB1DB01000F6E70 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		275E7B5E2CB1DB01000F6E70 /* HealthKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKitUI.framework; path = System/Library/Frameworks/HealthKitUI.framework; sourceTree = SDKROOT; };
+		275E7B7E2CB1E29C000F6E70 /* LeaderboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewModel.swift; sourceTree = "<group>"; };
+		275E7B802CB1E29C000F6E70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		275E7B8A2CB1F464000F6E70 /* StepDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDataModel.swift; sourceTree = "<group>"; };
+		275E7B8C2CB1F47D000F6E70 /* StepDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275E7B5F2CB1DB01000F6E70 /* HealthKit.framework in Frameworks */,
+				275E7B602CB1DB01000F6E70 /* HealthKitUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +94,13 @@
 		275E7B242CB1D9E8000F6E70 = {
 			isa = PBXGroup;
 			children = (
+				275E7B892CB1E2C0000F6E70 /* Models */,
+				275E7B882CB1E2B6000F6E70 /* ViewModels */,
+				275E7B872CB1E2A3000F6E70 /* Views */,
 				275E7B2F2CB1D9E8000F6E70 /* fitty */,
 				275E7B422CB1D9EA000F6E70 /* fittyTests */,
 				275E7B4C2CB1D9EA000F6E70 /* fittyUITests */,
+				275E7B5C2CB1DB01000F6E70 /* Frameworks */,
 				275E7B2E2CB1D9E8000F6E70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +113,41 @@
 				275E7B492CB1D9EA000F6E70 /* fittyUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		275E7B5C2CB1DB01000F6E70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				275E7B5D2CB1DB01000F6E70 /* HealthKit.framework */,
+				275E7B5E2CB1DB01000F6E70 /* HealthKitUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		275E7B872CB1E2A3000F6E70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				275E7B802CB1E29C000F6E70 /* ContentView.swift */,
+				275E7B8C2CB1F47D000F6E70 /* StepDataView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		275E7B882CB1E2B6000F6E70 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				275E7B7E2CB1E29C000F6E70 /* LeaderboardViewModel.swift */,
+				275E7B8A2CB1F464000F6E70 /* StepDataModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		275E7B892CB1E2C0000F6E70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				275E7B342CB1D9E8000F6E70 /* Item.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275E7B822CB1E29C000F6E70 /* ContentView.swift in Sources */,
+				275E7B352CB1D9E8000F6E70 /* Item.swift in Sources */,
+				275E7B8B2CB1F466000F6E70 /* StepDataModel.swift in Sources */,
+				275E7B832CB1E29C000F6E70 /* LeaderboardViewModel.swift in Sources */,
+				275E7B8D2CB1F47F000F6E70 /* StepDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,12 +456,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = fitty/fitty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fitty/Preview Content\"";
 				DEVELOPMENT_TEAM = 9Q5FSL46W6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Fitty needs access to your health data to track and display your daily step count";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -422,12 +487,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = fitty/fitty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fitty/Preview Content\"";
 				DEVELOPMENT_TEAM = 9Q5FSL46W6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Fitty needs access to your health data to track and display your daily step count";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
